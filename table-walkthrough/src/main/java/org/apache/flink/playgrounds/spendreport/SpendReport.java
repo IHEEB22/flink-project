@@ -32,7 +32,7 @@ public class SpendReport {
                 .groupBy($("patient_id"), $("gender"))
                 .select(
                         $("patient_id"),
-                        $("gender")
+                        $("gender"),
                         $("Cholesterol ").avg().as("avg_Cholesterol "));
     }
 
